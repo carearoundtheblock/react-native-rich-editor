@@ -98,13 +98,16 @@ The editor component. Simply place this component in your view hierarchy to rece
     A boolean value that determines if a View container is wrapped around the WebView. The default value is true. If you are using your own View to wrap this library around, set this value to false.
 
 * `styleWithCSS`
-    When true, style attribute of tags are modified. Otherwise dedicated tags are created. The default value is false 
+    When true, style attribute of tags are modified. Otherwise dedicated tags are created. The default value is false
 
 * `initialHeight`
     useContainer is false by inline view of initial height
 
 * `pasteAsPlainText`
     A boolean value (false as default) that determines if the clipboard paste will keep its format or it will be done as plain text
+
+* `useCharacter`
+  The option to disable Chinese characters allows you to support English characters without errors on Android. Set to `true` by default for backwards compatibility.
 
 * `onPaste`
   Callback clipboard paste value
